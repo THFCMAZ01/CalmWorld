@@ -1,0 +1,72 @@
+                                                Calm World – Worldwide Wellness & Mindfulness Resource
+Planning Document (for submission)
+
+1. Project Title
+Calm World – Simple, free mindfulness practices for everyone on Earth.
+2. Purpose & Rationale (Why I am building this website)
+
+-Over 1 billion people worldwide experience stress or anxiety (WHO data).
+-Many cannot afford paid apps, therapy, or classes, especially in low-income countries.
+-Mindfulness techniques are proven to reduce stress, yet most resources are locked behind paywalls or language barriers.
+-This website removes all barriers: no cost, no login, no ads, works on any device with internet, and uses universally understood, culture-neutral practices.
+
+3. Target Audience
+-Global population (anyone with internet access)
+Primary focus:
+
+-People in developing and developed countries alike
+-Ages 13–70
+-Low-bandwidth users (site is lightweight, <1 MB total)
+-Non-English speakers in the future (structure ready for translation)
+
+4. Global Reach Strategy
+
+-Content deliberately culture-neutral or explicitly multicultural (practices from six continents)
+-Simple language (short sentences, no jargon)
+-Mobile-first responsive design (over 60% of global traffic is mobile)
+-Fast loading even on 2G/3G connections
+-All resources linked are free and available worldwide
+
+5. Scope
+
+-5 separate static HTML pages (pure HTML + CSS, no JavaScript)
+-One shared CSS file for consistency
+-Full-screen high-quality purple background image (fixed) that creates a calm atmosphere
+
+6. Technology Choices
+
+-HTML5 + CSS3 only → maximum compatibility and speed
+-Semantic HTML for accessibility and SEO
+-No frameworks → demonstrates understanding of core web technologies
+-Hosted later on free platforms (GitHub Pages / Netlify) → truly global availability
+
+7. Accessibility & Inclusivity Features
+
+-High-contrast white text on dark purple background
+-Large, readable fonts
+-Proper heading hierarchy (h1 → h2 → etc.)
+-Alt text ready for future images
+-Works with screen readers
+-Keyboard-navigable links
+
+8. Content Summary
+
+-Home: Welcome + mission
+-Daily Practices: 10 universal techniques anyone can do in 1–5 minutes
+-World Traditions: 6 short mindfulness practices from different continents
+-Free Resources: 10+ permanent free tools and links
+-About: Explanation of the project and global purpose
+
+9. Visual Design Rationale
+
+-Fixed full-screen purple abstract image → instantly creates calm, meditative mood
+-Semi-transparent content overlay → excellent readability while keeping the atmosphere
+-Minimalist layout → reduces cognitive load and works worldwide regardless of screen size
+
+10. Success Criteria
+
+-Anyone on Earth with internet can open the site and immediately find a free way to feel calmer
+-Zero cost to user and zero cost to maintain
+-Demonstrates clean HTML/CSS coding, planning, and global thinking
+
+Student Name: Joshua Mazaza
