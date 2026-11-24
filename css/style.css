@@ -558,3 +558,298 @@ button:focus {
     background: rgba(186, 85, 211, 0.5);
     color: #ffffff;
 }
+
+
+/* ====================================
+   RESPONSIVE LAYOUT
+   Preserve the desktop visual style while adapting
+   spacing, typography and grids for smaller screens.
+   ==================================== */
+
+/* Prevent the desktop minimum width from forcing mobile zoom. */
+html {
+    min-width: 0;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+/* Tablet and smaller laptops */
+@media (max-width: 900px) {
+    header {
+        padding: 2rem 1.5rem 1rem;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        padding: 1rem 1.25rem;
+        border-radius: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0.55rem 0.8rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+    }
+
+    main {
+        padding: 2.5rem 2rem 4rem;
+    }
+
+    h1 {
+        font-size: clamp(2.5rem, 7vw, 4rem);
+        letter-spacing: 0.1em;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-section {
+        padding: 4rem 1rem 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .intro-panel {
+        padding: 3rem;
+        transform: none;
+    }
+
+    .intro-panel:hover {
+        transform: translateY(-6px);
+    }
+
+    .tradition-card:nth-child(odd),
+    .tradition-card:nth-child(even) {
+        transform: none;
+    }
+
+    .about-details,
+    .about-creator {
+        transform: none;
+    }
+
+    .about-values {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .practices-grid,
+    .resources-list {
+        gap: 1.5rem;
+        padding: 0;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    header {
+        padding: 1rem 1rem 0.5rem;
+    }
+
+    nav ul {
+        gap: 0.25rem;
+        padding: 0.75rem;
+        border-radius: 18px;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.55rem 0.35rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+    }
+
+    main {
+        padding: 1.5rem 1rem 3rem;
+        min-height: auto;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 10vw, 3rem);
+        line-height: 1.15;
+        letter-spacing: 0.07em;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        padding: 3rem 0.25rem 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 0.07em;
+    }
+
+    .intro-panel {
+        margin: 0 auto 2.5rem;
+        padding: 1.75rem 1.25rem;
+        border-radius: 22px;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .call-to-action {
+        padding: 2rem 0.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .call-to-action > p {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-links {
+        gap: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 320px;
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .page-header {
+        padding: 2rem 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .practices-grid,
+    .resources-list {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 0;
+    }
+
+    .practice-card,
+    .resource-item {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .practice-card h2,
+    .resource-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .practice-card p,
+    .resource-item p {
+        font-size: 1rem;
+    }
+
+    .traditions-container,
+    .about-content {
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .tradition-card {
+        padding: 1.75rem 1.25rem;
+        border-radius: 22px;
+    }
+
+    .tradition-card h2 {
+        font-size: 1.35rem;
+        letter-spacing: 0.07em;
+    }
+
+    .tradition-name {
+        font-size: 1.05rem;
+    }
+
+    .tradition-card p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .about-mission {
+        padding: 2rem 1.25rem;
+        border-radius: 24px;
+    }
+
+    .large-text {
+        font-size: 1.35rem;
+        line-height: 1.55;
+    }
+
+    .about-details {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .about-details p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .about-values {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.85rem;
+    }
+
+    .value-item {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .value-item h2 {
+        font-size: 1.1rem;
+    }
+
+    .about-creator {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .creator-text {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 2rem 1rem 1.5rem;
+        margin-top: 3rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
