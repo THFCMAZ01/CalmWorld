@@ -6,6 +6,10 @@ Calm World brings together beginner-friendly daily mindfulness ideas, examples o
 
 > No ads. No tracking. No login. Just peace.
 
+## Live Demo
+
+[Visit Calm World](https://thfcmaz01.github.io/CalmWorld/)
+
 ## A little about the project
 
 This was one of my first websites, built while I was learning the fundamentals of web development. It is a snapshot of that stage of my journey: experimenting with page layouts, shared styling, typography, colours, CSS effects, and building a small multi-page experience from scratch.
