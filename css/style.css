@@ -853,3 +853,75 @@ body {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ====================================
+   STICKY, CONSISTENT SITE NAVIGATION
+   ==================================== */
+
+/* Keep the shared navigation visible while scrolling on every page. */
+html {
+    scroll-padding-top: 7rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 1rem;
+    background: rgba(26, 11, 46, 0.82);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(186, 85, 211, 0.16);
+    box-shadow: 0 8px 24px rgba(10, 3, 20, 0.18);
+}
+
+/* Keep the five links on one consistent row at tablet and phone widths.
+   The row can be swiped horizontally instead of wrapping differently
+   from page to page or squeezing the labels. */
+@media (max-width: 900px) {
+    header {
+        padding: 0.75rem 1rem;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 0.35rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav li {
+        flex: 0 0 auto;
+    }
+
+    nav a {
+        display: block;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.6rem 0.65rem;
+    }
+
+    nav ul {
+        padding: 0.6rem;
+        gap: 0.2rem;
+        border-radius: 16px;
+    }
+
+    nav a {
+        padding: 0.55rem 0.65rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.035em;
+    }
+}
+
