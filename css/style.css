@@ -925,3 +925,15 @@ header {
     }
 }
 
+/* Keep the full background composition visible on narrow screens.
+   "cover" crops the sides of a wide image on portrait displays, making
+   the artwork appear excessively zoomed. Fit it to the viewport width. */
+@media (max-width: 600px) {
+    body {
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
