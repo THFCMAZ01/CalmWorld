@@ -925,3 +925,15 @@ header {
     }
 }
 
+/* Keep the background composition from appearing overly zoomed on phones.
+   Cover crops wide images on portrait screens, so fit the image to the
+   viewport width at small sizes while preserving the desktop treatment. */
+@media (max-width: 600px) {
+    body {
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
